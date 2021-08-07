@@ -10,6 +10,7 @@ services:
       - "elasticsearch"
     ports:
       - 24224:24224
+      - 9088:9088
       - 5140:5140/udp
       - 2020:2020
     logging:
