@@ -17,3 +17,8 @@ echo "{\"key\": 1234}" | fluent-cat test
 logger -d -n 127.0.0.1 --port 5140 "hello"
 ```
 
+### Send data through the HTTP input endpoint
+
+```
+curl -v -d @myapp-json.log -XPOST  -H "content-type: application/json"   http://127.0.0.1:9088/myapp.log
+```
