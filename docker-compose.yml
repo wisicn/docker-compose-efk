@@ -3,6 +3,7 @@ services:
 
   fluent-bit:
     image: fluent/fluent-bit:1.8.3
+    container_name: flubit01
     volumes:
       - ./fluent-bit/conf:/fluent-bit/etc
     links:
